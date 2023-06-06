@@ -6,6 +6,7 @@ import com.misterkourouma.trainings.springbootrestapi.model.User;
 public class UserMapper {
 
     public static UserDto mapToUserDto(User user){
+
         return UserDto.builder()
                 .id(user.getId())
                 .firstName(user.getFirstName())
